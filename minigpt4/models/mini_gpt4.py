@@ -71,6 +71,7 @@ class MiniGPT4(Blip2Base):
         for layer in self.Qformer.bert.encoder.layer:
             layer.output = None
             layer.intermediate = None
+        q_former_model = '/data03/shichengshun-slurm/project/minigpt4/pretrained_model/blip2_pretrained_flant5xxl.pth'
         self.load_from_pretrained(url_or_filename=q_former_model)
 
         if freeze_qformer:

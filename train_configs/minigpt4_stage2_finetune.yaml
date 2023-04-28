@@ -7,7 +7,7 @@ model:
   end_sym: "###"
   prompt_path: "prompts/alignment.txt"
   prompt_template: '###Human: {} ###Assistant: '
-  ckpt: '/path/to/stage1/checkpoint/'
+  ckpt: '/data03/shichengshun-slurm/project/minigpt4/vicuna_weights/pretrained_minigpt4_7b_stage1.pth'
 
 
 datasets:
@@ -31,7 +31,7 @@ run:
   weight_decay: 0.05
   max_epoch: 5
   iters_per_epoch: 200
-  batch_size_train: 12
+  batch_size_train: 2
   batch_size_eval: 12
   num_workers: 4
   warmup_steps: 200

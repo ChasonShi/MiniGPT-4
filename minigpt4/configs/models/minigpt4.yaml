@@ -13,7 +13,8 @@ model:
   num_query_token: 32
 
   # Vicuna
-  llama_model: "/path/to/vicuna/weights/"
+#  llama_model: "/data03/irlab_share/vicuna-13b-delta-v1.1/"
+  llama_model: "/data03/irlab_share/vicuna-7b-v1.1/"
 
   # generation configs
   prompt: ""
